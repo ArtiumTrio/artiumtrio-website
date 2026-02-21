@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pàgina no trobada - Artium Trio</title>
+  <meta name="robots" content="noindex">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'artium-red': '#b93333',
+            'artium-black': '#171717'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-warm-gray min-h-screen flex items-center justify-center">
+  <div class="container mx-auto px-4 text-center">
+    <div class="max-w-md mx-auto">
+      <!-- Logo -->
+      <img
+        src="assets/images/artium-trio-logo.png"
+        alt="Artium Trio"
+        class="h-12 w-auto mx-auto mb-8"
+      >
+
+      <!-- 404 Message -->
+      <h1 class="text-6xl font-serif font-bold text-artium-red mb-4">404</h1>
+      <h2 class="text-2xl font-serif font-semibold text-artium-black mb-4">
+        Pàgina no trobada
+      </h2>
+      <p class="text-gray-600 mb-8 leading-relaxed">
+        Ho sentim, la pàgina que busqueu no existeix o s'ha mogut.
+        Torneu a la pàgina principal per continuar navegant.
+      </p>
+
+      <!-- Back to home button -->
+      <a
+        href="/"
+        class="inline-block bg-artium-red hover:bg-artium-red/90 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200"
+      >
+        Tornar a l'inici
+      </a>
+
+      <!-- Contact info -->
+      <p class="mt-8 text-gray-500 text-sm">
+        Necessiteu ajuda?
+        <a href="mailto:hola@artiumtrio.com" class="text-artium-red hover:underline">
+          Contacteu-nos
+        </a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

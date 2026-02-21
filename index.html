@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <!-- Essential Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artium Trio - Música per a Casaments a Barcelona | Violí, Violoncel i Teclat</title>
+  <meta name="description" content="Artium Trio - Trio musical especialitzat en casaments i esdeveniments a Barcelona. Més de 150 casaments, 5 anys d'experiència. Sol·licita pressupost!">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://artiumtrio.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Artium Trio - Música per a Casaments">
+  <meta property="og:description" content="Trio musical especialitzat en casaments. Violí, violoncel i teclat.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://artiumtrio.com/">
+  <meta property="og:image" content="https://artiumtrio.com/assets/images/artium-trio-grup.png">
+  <meta property="og:locale" content="ca_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@artiumtrio">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/artium-trio-logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'artium-red': '#b93333',
+            'artium-black': '#171717',
+            'warm-gray': '#f5f4f3'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "Artium Trio",
+    "description": "Trio musical especialitzat en casaments i esdeveniments especials",
+    "url": "https://artiumtrio.com",
+    "telephone": "+34630648213",
+    "email": "hola@artiumtrio.com",
+    "areaServed": {
+      "@type": "City",
+      "name": "Barcelona"
+    },
+    "sameAs": ["https://instagram.com/artiumtrio"]
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="#inici" class="flex items-center space-x-2">
+          <img
+            src="assets/images/artium-trio-logo.png"
+            alt="Artium Trio - Trio musical per a casaments"
+            class="h-8 w-auto"
+          >
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#inici" class="text-gray-700 hover:text-artium-red transition-colors duration-200">Inici</a>
+          <a href="#sobre-nosaltres" class="text-gray-700 hover:text-artium-red transition-colors duration-200">Sobre Nosaltres</a>
+          <a href="#serveis" class="text-gray-700 hover:text-artium-red transition-colors duration-200">Serveis</a>
+          <a href="#testimonis" class="text-gray-700 hover:text-artium-red transition-colors duration-200">Testimonis</a>
+          <a href="#escolta-nos" class="text-gray-700 hover:text-artium-red transition-colors duration-200">Escolta'ns</a>
+          <a href="#contacte" class="bg-artium-red hover:bg-artium-red/90 text-white px-4 py-2 rounded-md transition-colors duration-200">Contacte</a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="md:hidden p-2 rounded-md text-gray-700 hover:text-artium-red" aria-label="Obrir menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-100">
+        <nav class="flex flex-col space-y-4">
+          <a href="#inici" class="text-gray-700 hover:text-artium-red transition-colors duration-200">Inici</a>
+          <a href="#sobre-nosaltres" class="text-gray-700 hover:text-artium-red transition-colors duration-200">Sobre Nosaltres</a>
+          <a href="#serveis" class="text-gray-700 hover:text-artium-red transition-colors duration-200">Serveis</a>
+          <a href="#testimonis" class="text-gray-700 hover:text-artium-red transition-colors duration-200">Testimonis</a>
+          <a href="#escolta-nos" class="text-gray-700 hover:text-artium-red transition-colors duration-200">Escolta'ns</a>
+          <a href="#contacte" class="bg-artium-red hover:bg-artium-red/90 text-white px-4 py-2 rounded-md w-fit transition-colors duration-200">Contacte</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="inici" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <!-- Background image -->
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/hero-background.png')"></div>
+
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <div class="max-w-4xl mx-auto">
+          <!-- Main heading -->
+          <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 drop-shadow-2xl">
+            Música que
+            <span class="block text-artium-red">enamora</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="text-xl md:text-2xl text-white mb-8 leading-relaxed drop-shadow-xl font-medium">
+            Som <strong class="text-artium-red">Artium Trio</strong>, especialistes a fer del teu casament
+            un moment únic i inoblidable amb la màgia dels nostres violí, violoncel i teclat.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#escolta-nos" class="bg-artium-red hover:bg-artium-red/90 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 shadow-2xl rounded-lg">
+              Escolta els nostres vídeos
+            </a>
+            <a href="#contacte" class="border-2 border-white text-white hover:bg-white hover:text-artium-black px-8 py-4 text-lg font-medium transition-all duration-300 bg-white/20 backdrop-blur-sm shadow-2xl hover:scale-105 rounded-lg">
+              Demanar pressupost
+            </a>
+          </div>
+
+          <!-- Social proof -->
+          <div class="mt-12">
+            <p class="text-white/95 mb-4 drop-shadow-xl font-medium">Més de 150 parelles han confiat en nosaltres</p>
+            <div class="flex justify-center items-center space-x-1">
+              <span class="text-yellow-400 text-xl drop-shadow-lg">★</span>
+              <span class="text-yellow-400 text-xl drop-shadow-lg">★</span>
+              <span class="text-yellow-400 text-xl drop-shadow-lg">★</span>
+              <span class="text-yellow-400 text-xl drop-shadow-lg">★</span>
+              <span class="text-yellow-400 text-xl drop-shadow-lg">★</span>
+              <span class="ml-2 text-white/95 text-sm drop-shadow-xl font-medium">5.0 de valoració mitjana</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-nosaltres" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-serif font-bold text-artium-black mb-6">
+            Coneix <span class="text-artium-red">Artium Trio</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Som tres músics apassionats que hem unit els nostres talents per crear
+            experiències musicals úniques en casaments i esdeveniments especials.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+          <!-- Violinist -->
+          <div class="text-center group">
+            <div class="relative overflow-hidden rounded-lg mb-6 hover:scale-105 transition-transform duration-300">
+              <img
+                src="assets/images/violinista.png"
+                alt="Violinista d'Artium Trio tocant en un casament"
+                class="w-full h-80 object-cover"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-artium-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <h3 class="text-2xl font-serif font-semibold text-artium-black mb-2">Violí</h3>
+            <p class="text-gray-600">
+              Melodies que toquen el cor i creen moments màgics en cada interpretació.
+            </p>
+          </div>
+
+          <!-- Keyboardist -->
+          <div class="text-center group">
+            <div class="relative overflow-hidden rounded-lg mb-6 hover:scale-105 transition-transform duration-300">
+              <img
+                src="assets/images/tecladista.png"
+                alt="Tecladista d'Artium Trio durant una cerimònia"
+                class="w-full h-80 object-cover"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-artium-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <h3 class="text-2xl font-serif font-semibold text-artium-black mb-2">Teclat</h3>
+            <p class="text-gray-600">
+              Harmonies perfectes que complementen i eleven cada moment musical.
+            </p>
+          </div>
+
+          <!-- Cellist -->
+          <div class="text-center group">
+            <div class="relative overflow-hidden rounded-lg mb-6 hover:scale-105 transition-transform duration-300">
+              <img
+                src="assets/images/violoncelista.png"
+                alt="Violoncel·lista d'Artium Trio en concert"
+                class="w-full h-80 object-cover"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-artium-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <h3 class="text-2xl font-serif font-semibold text-artium-black mb-2">Violoncel</h3>
+            <p class="text-gray-600">
+              Profunditat i elegància que aporten calidesa i emotivitat única.
+            </p>
+          </div>
+        </div>
+
+        <!-- Group photo and description -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="relative">
+            <img
+              src="assets/images/artium-trio-grup.png"
+              alt="Artium Trio - El trio complet tocant junts en un esdeveniment"
+              class="w-full rounded-lg shadow-xl"
+              loading="lazy"
+            >
+          </div>
+          <div class="space-y-6">
+            <h3 class="text-3xl font-serif font-semibold text-artium-black">
+              La nostra història junts
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Des de fa més de 5 anys, hem perfeccionat el nostre art musical per
+              oferir interpretacions que van des de la música clàssica més elegant fins
+              a les cançons contemporànies més populars.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Cada casament és únic, i per això adaptem el nostre repertori als gustos
+              i preferències de cada parella, creant bandes sonores personalitzades
+              per al seu dia més especial.
+            </p>
+            <div class="flex items-center space-x-8 text-artium-red">
+              <div class="text-center">
+                <div class="text-3xl font-bold">150+</div>
+                <div class="text-sm text-gray-600">Casaments realitzats</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold">5+</div>
+                <div class="text-sm text-gray-600">Anys d'experiència</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold">100%</div>
+                <div class="text-sm text-gray-600">Satisfacció</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="serveis" class="py-20 bg-warm-gray">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-serif font-bold text-artium-black mb-6">
+            Els nostres <span class="text-artium-red">Serveis</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Oferim música en viu per a cada moment del vostre dia especial: des de la
+            <strong>cerimònia</strong> més emotiva, passant pel <strong>cocktail</strong> elegant,
+            fins a la <strong>recepció de convidats</strong> més memorable.
+            Adaptant-nos sempre a les vostres necessitats i preferències musicals.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Qualitat -->
+          <div class="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 group hover:scale-105 transform">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-artium-red/10 rounded-full mb-6 group-hover:bg-artium-red transition-colors duration-300">
+              <svg class="w-8 h-8 text-artium-red group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-serif font-semibold text-artium-black mb-4">Qualitat</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Som músics professionals, portem més de 15 anys fent el que ens encanta.
+            </p>
+          </div>
+
+          <!-- Personalització -->
+          <div class="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 group hover:scale-105 transform">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-artium-red/10 rounded-full mb-6 group-hover:bg-artium-red transition-colors duration-300">
+              <svg class="w-8 h-8 text-artium-red group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-serif font-semibold text-artium-black mb-4">Personalització</h3>
+            <p class="text-gray-600 leading-relaxed">
+              El teu casament, la teva música. Des de temes de Michael Jackson, fins a Queen, passant per Coldplay, David Guetta, etc.
+            </p>
+          </div>
+
+          <!-- Comoditat -->
+          <div class="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 group hover:scale-105 transform">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-artium-red/10 rounded-full mb-6 group-hover:bg-artium-red transition-colors duration-300">
+              <svg class="w-8 h-8 text-artium-red group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-serif font-semibold text-artium-black mb-4">Comoditat</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Ens hem de posar d'acord amb el mossèn/cerimoniant? Amb el restaurant? Ens n'encarreguem, hi estem acostumats.
+            </p>
+          </div>
+
+          <!-- Elegància -->
+          <div class="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 group hover:scale-105 transform">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-artium-red/10 rounded-full mb-6 group-hover:bg-artium-red transition-colors duration-300">
+              <svg class="w-8 h-8 text-artium-red group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-serif font-semibold text-artium-black mb-4">Elegància</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Hi ha quelcom més espectacular que tenir música en directe a un casament?
+            </p>
+          </div>
+        </div>
+
+        <!-- Special request box -->
+        <div class="text-center mt-16">
+          <div class="bg-white rounded-lg p-8 shadow-lg max-w-4xl mx-auto">
+            <h3 class="text-2xl font-serif font-semibold text-artium-black mb-4">
+              Tens una cançó especial en ment?
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Ens encanta adaptar les cançons que més signifiquen per a vosaltres.
+              Des de clàssics del pop fins a temes de pel·lícules, podem crear versions úniques
+              amb els nostres instruments que faran que la vostra música favorita soni com mai abans.
+            </p>
+            <div class="inline-flex items-center space-x-2 text-artium-red font-medium">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+              </svg>
+              <span>Repertori personalitzable · Música clàssica i moderna · Sol·licituds especials</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonis" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-serif font-bold text-artium-black mb-6">
+            El que diuen <span class="text-artium-red">les nostres parelles</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Cada casament és únic i especial. Aquestes són les paraules d'algunes de les parelles
+            que han confiat en nosaltres per fer del seu dia alguna cosa inoblidable.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <!-- Testimonial 1 -->
+          <div class="bg-warm-gray rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 relative">
+            <div class="absolute top-4 right-4 text-artium-red/20 text-5xl font-serif">"</div>
+            <div class="flex items-center mb-3">
+              <span class="text-yellow-400 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4 italic text-sm">
+              "Artium Trio va fer que el nostre casament fos absolutament màgic. La música durant la cerimònia ens va emocionar fins a les llàgrimes, i durant el còctel van crear l'ambient perfecte. Tots els nostres convidats van quedar encantats!"
+            </p>
+            <div class="border-t border-gray-200 pt-3">
+              <div class="font-semibold text-artium-black">Maria i Carles</div>
+              <div class="text-artium-red font-medium text-sm">Casament al Jardí Botànic</div>
+              <div class="text-gray-500 text-xs">Juny 2024</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-warm-gray rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 relative">
+            <div class="absolute top-4 right-4 text-artium-red/20 text-5xl font-serif">"</div>
+            <div class="flex items-center mb-3">
+              <span class="text-yellow-400 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4 italic text-sm">
+              "Professionals increïbles. Van adaptar totes les nostres cançons favorites i el resultat va ser espectacular. La versió de 'Marry Me' de Bruno Mars amb violí, violoncel i piano va ser el moment més emotiu de la cerimònia."
+            </p>
+            <div class="border-t border-gray-200 pt-3">
+              <div class="font-semibold text-artium-black">Anna i Miquel</div>
+              <div class="text-artium-red font-medium text-sm">Casament a Masia Rural</div>
+              <div class="text-gray-500 text-xs">Setembre 2024</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-warm-gray rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 relative">
+            <div class="absolute top-4 right-4 text-artium-red/20 text-5xl font-serif">"</div>
+            <div class="flex items-center mb-3">
+              <span class="text-yellow-400 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4 italic text-sm">
+              "Des del primer contacte fins al darrer acord, tot va ser perfecte. La seva música va acompanyar cada moment important del nostre dia. Sense dubte, una de les millors decisions que vam prendre per al nostre casament."
+            </p>
+            <div class="border-t border-gray-200 pt-3">
+              <div class="font-semibold text-artium-black">Laura i Javi</div>
+              <div class="text-artium-red font-medium text-sm">Casament a Hotel Boutique</div>
+              <div class="text-gray-500 text-xs">Maig 2024</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="bg-warm-gray rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 relative lg:col-start-2">
+            <div class="absolute top-4 right-4 text-artium-red/20 text-5xl font-serif">"</div>
+            <div class="flex items-center mb-3">
+              <span class="text-yellow-400 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4 italic text-sm">
+              "Buscàvem alguna cosa especial i diferent per al nostre casament a la platja. Artium Trio va superar totes les nostres expectatives. La combinació d'instruments va ser perfecta per a l'entorn i va crear una atmosfera única."
+            </p>
+            <div class="border-t border-gray-200 pt-3">
+              <div class="font-semibold text-artium-black">Cristina i Alejandro</div>
+              <div class="text-artium-red font-medium text-sm">Casament a la Platja</div>
+              <div class="text-gray-500 text-xs">Agost 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats section -->
+        <div class="mt-20 bg-artium-black rounded-lg p-12 text-white text-center">
+          <h3 class="text-3xl font-serif font-semibold mb-8">
+            La nostra experiència en números
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+              <div class="text-4xl font-bold text-artium-red mb-2">150+</div>
+              <div class="text-gray-300">Casaments realitzats</div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold text-artium-red mb-2">5.0</div>
+              <div class="text-gray-300">Valoració mitjana</div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold text-artium-red mb-2">100%</div>
+              <div class="text-gray-300">Parelles satisfetes</div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold text-artium-red mb-2">5+</div>
+              <div class="text-gray-300">Anys d'experiència</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="escolta-nos" class="py-20 bg-artium-black text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+            <span class="text-artium-red">Escolta'ns</span> en acció
+          </h2>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+            Descobreix com els nostres instruments donen vida als moments més especials.
+            Aquests vídeos mostren la nostra experiència real en casaments i esdeveniments.
+          </p>
+          <div class="flex items-center justify-center space-x-2 text-artium-red">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span class="font-medium">Segueix-nos a @artiumtrio per a més vídeos</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <!-- Video 1 -->
+          <a href="https://instagram.com/artiumtrio" target="_blank" rel="noopener noreferrer" class="group relative bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+            <div class="relative aspect-[4/5] overflow-hidden">
+              <img
+                src="assets/images/video-thumbnail.png"
+                alt="Cerimònia romàntica al jardí - Artium Trio"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="bg-artium-red rounded-full p-4 hover:scale-110 transition-transform duration-200">
+                  <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <h3 class="text-white font-semibold text-lg mb-1">Cerimònia romàntica al jardí</h3>
+                <p class="text-gray-300 text-sm">Ave Maria interpretada durant una cerimònia a l'aire lliure</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Video 2 -->
+          <a href="https://instagram.com/artiumtrio" target="_blank" rel="noopener noreferrer" class="group relative bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+            <div class="relative aspect-[4/5] overflow-hidden">
+              <img
+                src="assets/images/hero-background.png"
+                alt="Còctel elegant - Artium Trio"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="bg-artium-red rounded-full p-4 hover:scale-110 transition-transform duration-200">
+                  <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <h3 class="text-white font-semibold text-lg mb-1">Còctel elegant</h3>
+                <p class="text-gray-300 text-sm">Música d'ambient durant el còctel de celebració</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Video 3 -->
+          <a href="https://instagram.com/artiumtrio" target="_blank" rel="noopener noreferrer" class="group relative bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+            <div class="relative aspect-[4/5] overflow-hidden">
+              <img
+                src="assets/images/violinista.png"
+                alt="Entrada de la núvia - Artium Trio"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="bg-artium-red rounded-full p-4 hover:scale-110 transition-transform duration-200">
+                  <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <h3 class="text-white font-semibold text-lg mb-1">Entrada de la núvia</h3>
+                <p class="text-gray-300 text-sm">Marxa nupcial adaptada per a violí, violoncel i piano</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Video 4 -->
+          <a href="https://instagram.com/artiumtrio" target="_blank" rel="noopener noreferrer" class="group relative bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+            <div class="relative aspect-[4/5] overflow-hidden">
+              <img
+                src="assets/images/tecladista.png"
+                alt="Moment íntim - Artium Trio"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="bg-artium-red rounded-full p-4 hover:scale-110 transition-transform duration-200">
+                  <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <h3 class="text-white font-semibold text-lg mb-1">Moment íntim</h3>
+                <p class="text-gray-300 text-sm">Interpretació especial durant l'intercanvi d'anells</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Video 5 -->
+          <a href="https://instagram.com/artiumtrio" target="_blank" rel="noopener noreferrer" class="group relative bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+            <div class="relative aspect-[4/5] overflow-hidden">
+              <img
+                src="assets/images/violoncelista.png"
+                alt="Banquet celebració - Artium Trio"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="bg-artium-red rounded-full p-4 hover:scale-110 transition-transform duration-200">
+                  <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <h3 class="text-white font-semibold text-lg mb-1">Banquet celebració</h3>
+                <p class="text-gray-300 text-sm">Música en viu durant el sopar de celebració</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Video 6 -->
+          <a href="https://instagram.com/artiumtrio" target="_blank" rel="noopener noreferrer" class="group relative bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+            <div class="relative aspect-[4/5] overflow-hidden">
+              <img
+                src="assets/images/video-thumbnail.png"
+                alt="Sessió de fotos - Artium Trio"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="bg-artium-red rounded-full p-4 hover:scale-110 transition-transform duration-200">
+                  <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <h3 class="text-white font-semibold text-lg mb-1">Sessió de fotos</h3>
+                <p class="text-gray-300 text-sm">Acompanyament musical per a sessió de fotos romàntica</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Call to action -->
+        <div class="text-center">
+          <div class="bg-gray-900 rounded-lg p-8 max-w-4xl mx-auto">
+            <h3 class="text-2xl font-serif font-semibold mb-4">
+              T'agrada el que veus?
+            </h3>
+            <p class="text-gray-300 leading-relaxed mb-6">
+              Aquests són només alguns exemples del nostre treball. Cada casament és únic
+              i adaptem el nostre estil a les vostres preferències musicals per crear
+              la banda sonora perfecta del vostre dia especial.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a href="https://instagram.com/artiumtrio" target="_blank" rel="noopener noreferrer" class="bg-artium-red hover:bg-artium-red/90 text-white px-8 py-3 rounded-lg inline-flex items-center transition-colors duration-200">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                Veure més a Instagram
+              </a>
+              <a href="#contacte" class="border-2 border-white text-white hover:bg-white hover:text-artium-black px-8 py-3 rounded-lg transition-colors duration-200">
+                Sol·licitar pressupost
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacte" class="py-20 bg-warm-gray">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-serif font-bold text-artium-black mb-6">
+            Parlem del vostre <span class="text-artium-red">casament</span>?
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Expliqueu-nos la vostra història i com podem fer que la vostra música sigui tan especial com vosaltres.
+            Estarem encantats de crear la banda sonora perfecta per al vostre dia.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <div>
+              <h3 class="text-2xl font-serif font-semibold text-artium-black mb-6">
+                Poseu-vos en contacte
+              </h3>
+              <div class="space-y-6">
+                <div class="flex items-center space-x-4">
+                  <div class="bg-artium-red/10 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-artium-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-medium text-artium-black">Telèfon</div>
+                    <a href="tel:+34630648213" class="text-gray-600 hover:text-artium-red transition-colors">+34 630 648 213</a>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <div class="bg-artium-red/10 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-artium-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-medium text-artium-black">Correu electrònic</div>
+                    <a href="mailto:hola@artiumtrio.com" class="text-gray-600 hover:text-artium-red transition-colors">hola@artiumtrio.com</a>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <div class="bg-artium-red/10 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-artium-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-medium text-artium-black">Ubicació</div>
+                    <div class="text-gray-600">Barcelona i voltants</div>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <div class="bg-artium-red/10 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-artium-red" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-medium text-artium-black">Instagram</div>
+                    <a href="https://instagram.com/artiumtrio" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-artium-red transition-colors">@artiumtrio</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service includes box -->
+            <div class="bg-white rounded-lg p-6 shadow-lg">
+              <h4 class="text-xl font-serif font-semibold text-artium-black mb-4">
+                Què inclou el nostre servei?
+              </h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-artium-red rounded-full mr-3"></span>
+                  Consulta personalitzada gratuïta
+                </li>
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-artium-red rounded-full mr-3"></span>
+                  Repertori adaptat als vostres gustos
+                </li>
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-artium-red rounded-full mr-3"></span>
+                  Equipament professional inclòs
+                </li>
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-artium-red rounded-full mr-3"></span>
+                  Flexibilitat en horaris i ubicació
+                </li>
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-artium-red rounded-full mr-3"></span>
+                  Assegurança de responsabilitat civil
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact CTA -->
+          <div class="bg-white rounded-lg p-8 shadow-lg flex flex-col justify-center">
+            <h3 class="text-2xl font-serif font-semibold text-artium-black mb-6">
+              Sol·liciteu el vostre pressupost
+            </h3>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+              Feu clic al botó de sota per enviar-nos un correu amb les dades del vostre casament.
+              Us respondrem el més aviat possible amb un pressupost personalitzat.
+            </p>
+            <a
+              href="mailto:hola@artiumtrio.com?subject=Sol%C2%B7licitud%20de%20pressupost&body=Hola%20Artium%20Trio%2C%0A%0ANoms%3A%20%0AData%20del%20casament%3A%20%0ALloc%3A%20%0A%0AGr%C3%A0cies!"
+              class="w-full bg-artium-red hover:bg-artium-red/90 text-white py-4 text-lg font-medium rounded-lg flex items-center justify-center gap-2 transition-colors duration-200"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              Sol·licitar pressupost per correu
+            </a>
+            <p class="text-gray-500 text-sm mt-4 text-center">
+              O truqueu-nos directament al <a href="tel:+34630648213" class="text-artium-red hover:underline">+34 630 648 213</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-artium-black text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Logo and description -->
+        <div class="space-y-4">
+          <img
+            src="assets/images/artium-trio-logo.png"
+            alt="Artium Trio"
+            class="h-8 w-auto brightness-0 invert"
+          >
+          <p class="text-gray-300 leading-relaxed">
+            Trio musical especialitzat en casaments i esdeveniments especials.
+            Creem bandes sonores úniques per als vostres moments més importants.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="https://instagram.com/artiumtrio"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-artium-red/20 p-2 rounded-full hover:bg-artium-red transition-colors duration-200"
+              aria-label="Instagram d'Artium Trio"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a
+              href="mailto:hola@artiumtrio.com"
+              class="bg-artium-red/20 p-2 rounded-full hover:bg-artium-red transition-colors duration-200"
+              aria-label="Enviar correu a Artium Trio"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </a>
+            <a
+              href="tel:+34630648213"
+              class="bg-artium-red/20 p-2 rounded-full hover:bg-artium-red transition-colors duration-200"
+              aria-label="Trucar a Artium Trio"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-serif font-semibold">Enllaços ràpids</h3>
+          <nav class="flex flex-col space-y-2">
+            <a href="#sobre-nosaltres" class="text-gray-300 hover:text-artium-red transition-colors duration-200">Sobre Nosaltres</a>
+            <a href="#serveis" class="text-gray-300 hover:text-artium-red transition-colors duration-200">Serveis</a>
+            <a href="#testimonis" class="text-gray-300 hover:text-artium-red transition-colors duration-200">Testimonis</a>
+            <a href="#escolta-nos" class="text-gray-300 hover:text-artium-red transition-colors duration-200">Escolta'ns</a>
+          </nav>
+        </div>
+
+        <!-- Contact info -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-serif font-semibold">Contacte</h3>
+          <div class="space-y-2 text-gray-300">
+            <div class="flex items-center space-x-2">
+              <svg class="w-4 h-4 text-artium-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span>+34 630 648 213</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <svg class="w-4 h-4 text-artium-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span>hola@artiumtrio.com</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <svg class="w-4 h-4 text-artium-red" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>@artiumtrio</span>
+            </div>
+          </div>
+          <div class="text-gray-300 text-sm">
+            <p>Barcelona i voltants</p>
+            <p>Disponible per a esdeveniments a tota Catalunya</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom section -->
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; <span id="current-year"></span> Artium Trio. Tots els drets reservats.</p>
+        <p class="mt-2">Fem realitat la música dels vostres somnis</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+          // Close mobile menu if open
+          document.getElementById('mobile-menu').classList.add('hidden');
+        }
+      });
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Dynamic year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
