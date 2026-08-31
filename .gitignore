@@ -1,0 +1,8 @@
+# macOS / IDE noise
+.DS_Store
+.idea/
+
+# Full-resolution photo masters. Drop new shoots in as assets/images/new-*.jpg,
+# derive the web assets from them, and keep the masters backed up outside the
+# repo — a GitHub Pages repo should not carry them.
+assets/images/new-*.jpg

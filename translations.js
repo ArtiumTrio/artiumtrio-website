@@ -25,18 +25,15 @@ const translations = {
       contact: "Contacte"
     },
     hero: {
-      eyebrow: "Trio de violí, violoncel i piano · 12 anys · +100 casaments",
-      titleLine1: "Música que",
-      titleLine2: "enamora",
-      subtitle: 'Som <strong class="text-artium-cream font-semibold">Artium Trio</strong>, especialistes a fer del vostre casament un moment únic i inoblidable amb la màgia del violí, el violoncel i el piano.',
-      ctaPrimary: "Escolta els nostres vídeos",
-      ctaSecondary: "Escriu-nos sense compromís",
-      socialProof: "Més de 100 parelles han confiat en nosaltres",
-      rating: "5,0 de valoració mitjana"
+      title: "Posem la banda sonora al dia que recordareu per sempre",
+      subtitle: "Trio de violí, violoncel i piano per a esdeveniments",
+      ctaPrimary: "Escolta'ns",
+      ctaSecondary: "Consulta la vostra data",
+      proof: "5,0 · +100 casaments · 12 anys tocant junts"
     },
     about: {
       title: 'Coneix <span class="text-artium-red">Artium Trio</span>',
-      subtitle: "Som tres músics apassionats que hem unit els nostres talents per crear experiències musicals úniques en casaments i esdeveniments especials.",
+      subtitle: "Som el Bernat, l'Antoni i el Guillem. Traduïm la vostra història al violí, al violoncel i al piano.",
       violinTitle: "Violí",
       violinDesc: "Melodies que toquen el cor i creen moments màgics en cada interpretació.",
       pianoTitle: "Piano",
@@ -165,18 +162,15 @@ const translations = {
       contact: "Contact"
     },
     hero: {
-      eyebrow: "Violin, cello & piano trio · 12 years · 100+ weddings",
-      titleLine1: "Music that",
-      titleLine2: "captivates",
-      subtitle: 'We are <strong class="text-artium-cream font-semibold">Artium Trio</strong>, specialists in making your wedding a unique and unforgettable moment with the magic of violin, cello and piano.',
-      ctaPrimary: "Watch our videos",
-      ctaSecondary: "Get in touch, no strings attached",
-      socialProof: "Over 100 couples have trusted us",
-      rating: "5.0 average rating"
+      title: "The soundtrack to the day you'll remember forever",
+      subtitle: "Violin, cello and piano trio for events",
+      ctaPrimary: "Listen to us",
+      ctaSecondary: "Check your date",
+      proof: "5.0 · 100+ weddings · 12 years playing together"
     },
     about: {
       title: 'Meet <span class="text-artium-red">Artium Trio</span>',
-      subtitle: "We are three passionate musicians who have joined our talents to create unique musical experiences at weddings and special events.",
+      subtitle: "We're Bernat, Antoni and Guillem. We translate your story into violin, cello and piano.",
       violinTitle: "Violin",
       violinDesc: "Melodies that touch the heart and create magical moments in every performance.",
       pianoTitle: "Piano",
@@ -305,18 +299,15 @@ const translations = {
       contact: "Contacto"
     },
     hero: {
-      eyebrow: "Trío de violín, violonchelo y piano · 12 años · +100 bodas",
-      titleLine1: "Música que",
-      titleLine2: "enamora",
-      subtitle: 'Somos <strong class="text-artium-cream font-semibold">Artium Trio</strong>, especialistas en hacer de vuestra boda un momento único e inolvidable con la magia del violín, el violonchelo y el piano.',
-      ctaPrimary: "Escucha nuestros vídeos",
-      ctaSecondary: "Escríbenos sin compromiso",
-      socialProof: "Más de 100 parejas han confiado en nosotros",
-      rating: "5,0 de valoración media"
+      title: "Ponemos la banda sonora al día que recordaréis para siempre",
+      subtitle: "Trío de violín, violonchelo y piano para eventos",
+      ctaPrimary: "Escúchanos",
+      ctaSecondary: "Consulta vuestra fecha",
+      proof: "5,0 · +100 bodas · 12 años tocando juntos"
     },
     about: {
       title: 'Conoce a <span class="text-artium-red">Artium Trio</span>',
-      subtitle: "Somos tres músicos apasionados que hemos unido nuestros talentos para crear experiencias musicales únicas en bodas y eventos especiales.",
+      subtitle: "Somos Bernat, Antoni y Guillem. Traducimos vuestra historia al violín, al violonchelo y al piano.",
       violinTitle: "Violín",
       violinDesc: "Melodías que llegan al corazón y crean momentos mágicos en cada interpretación.",
       pianoTitle: "Piano",

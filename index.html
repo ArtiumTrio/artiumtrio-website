@@ -40,6 +40,10 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/artium-trio-logo.png">
 
+  <!-- Hero image preload (LCP) -->
+  <link rel="preload" as="image" type="image/webp" href="assets/images/hero-mobile.webp" media="(max-width: 767px)" fetchpriority="high">
+  <link rel="preload" as="image" type="image/webp" href="assets/images/hero-desktop.webp" media="(min-width: 768px)" fetchpriority="high">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -290,53 +294,58 @@
 
   <main>
     <!-- Hero Section -->
-    <section id="inici" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <!-- Background image -->
-      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/hero-background.png')"></div>
+    <section id="inici" class="relative min-h-[100svh] flex items-end justify-center overflow-hidden pb-10 md:pb-10">
+      <!-- Background photo: portrait crop on mobile, landscape on desktop -->
+      <picture>
+        <source media="(max-width: 767px)" type="image/webp" srcset="assets/images/hero-mobile.webp">
+        <source media="(max-width: 767px)" type="image/jpeg" srcset="assets/images/hero-mobile.jpg">
+        <source type="image/webp" srcset="assets/images/hero-desktop.webp">
+        <img
+          src="assets/images/hero-desktop.jpg"
+          alt="Artium Trio, trio de violí, violoncel i piano, en un camp al capvespre"
+          width="1920"
+          height="1038"
+          class="absolute inset-0 w-full h-full object-cover object-[53%_center] md:object-center"
+          fetchpriority="high"
+          decoding="async"
+        >
+      </picture>
 
-      <!-- Dark overlay -->
-      <div class="absolute inset-0 bg-black/25"></div>
+      <!-- Graded scrim: keeps the golden-hour light luminous, darkens only where the text sits -->
+      <div class="absolute inset-0" style="background:linear-gradient(to bottom, rgba(43,38,34,.42) 0%, rgba(43,38,34,.10) 22%, rgba(43,38,34,.34) 55%, rgba(43,38,34,.82) 100%)"></div>
+      <div class="absolute inset-0" style="background:radial-gradient(ellipse 65% 45% at 50% 82%, rgba(43,38,34,.46) 0%, rgba(43,38,34,0) 78%)"></div>
 
       <div class="container mx-auto px-4 text-center relative z-10">
         <div class="max-w-4xl mx-auto">
-          <!-- Main heading -->
-          <h1 class="text-5xl md:text-7xl font-serif font-semibold tracking-tight text-white mb-6 drop-shadow-2xl">
-            <span data-i18n="hero.titleLine1">Música que</span>
-            <span class="block text-artium-cream" data-i18n="hero.titleLine2">enamora</span>
+          <!-- Headline -->
+          <h1
+            class="font-serif font-semibold tracking-tight text-white text-3xl sm:text-5xl md:text-[3.25rem] lg:text-[3.5rem] leading-[1.15] mb-4 md:mb-5 max-w-3xl mx-auto"
+            style="text-wrap:balance;text-shadow:0 2px 28px rgba(0,0,0,.45)"
+            data-i18n="hero.title">
+            Posem la banda sonora al dia que recordareu per sempre
           </h1>
 
-          <!-- Subtitle -->
-          <p class="text-xl md:text-2xl text-white mb-6 leading-relaxed drop-shadow-xl font-medium" data-i18n-html="hero.subtitle">
-            Som <strong class="text-artium-cream font-semibold">Artium Trio</strong>, especialistes a fer del vostre casament
-            un moment únic i inoblidable amb la màgia del violí, el violoncel i el piano.
-          </p>
-
-          <!-- Eyebrow line -->
-          <p class="text-white/80 text-sm tracking-wider uppercase mb-6 drop-shadow-lg" data-i18n="hero.eyebrow">
-            Trio de violí, violoncel i piano · 12 anys · +100 casaments
+          <!-- Support line -->
+          <p class="text-white/90 text-base md:text-xl font-medium mb-6 md:mb-8" style="text-shadow:0 1px 14px rgba(0,0,0,.5)" data-i18n="hero.subtitle">
+            Trio de violí, violoncel i piano per a esdeveniments
           </p>
 
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="#escolta-nos" data-i18n="hero.ctaPrimary" class="bg-artium-red hover:bg-artium-red/90 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 shadow-2xl rounded-lg">
-              Escolta els nostres vídeos
+              Escolta'ns
             </a>
             <a href="https://tally.so/r/mOPW2p" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaSecondary" class="border-2 border-white/80 text-white hover:bg-white hover:text-artium-carbon px-8 py-4 text-lg font-medium transition-all duration-300 bg-transparent shadow-2xl hover:scale-105 rounded-lg">
-              Escriu-nos sense compromís
+              Consulta la vostra data
             </a>
           </div>
 
-          <!-- Social proof -->
-          <div class="mt-12">
-            <p class="text-white/95 mb-4 drop-shadow-xl font-medium" data-i18n="hero.socialProof">Més de 100 parelles han confiat en nosaltres</p>
-            <div class="flex justify-center items-center space-x-1">
-              <span class="text-artium-gold text-xl drop-shadow-lg">★</span>
-              <span class="text-artium-gold text-xl drop-shadow-lg">★</span>
-              <span class="text-artium-gold text-xl drop-shadow-lg">★</span>
-              <span class="text-artium-gold text-xl drop-shadow-lg">★</span>
-              <span class="text-artium-gold text-xl drop-shadow-lg">★</span>
-              <span class="ml-2 text-white/95 text-sm drop-shadow-xl font-medium" data-i18n="hero.rating">5,0 de valoració mitjana</span>
-            </div>
+          <!-- Proof strip -->
+          <div class="mt-6 md:mt-8 flex flex-wrap justify-center items-center gap-x-3 gap-y-1">
+            <span class="text-artium-gold text-lg tracking-[.15em] drop-shadow-lg" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="text-white/95 text-sm md:text-base font-medium" style="text-shadow:0 1px 12px rgba(0,0,0,.5)" data-i18n="hero.proof">
+              5,0 &middot; +100 casaments &middot; 12 anys tocant junts
+            </span>
           </div>
         </div>
       </div>
@@ -350,21 +359,26 @@
             Coneix <span class="text-artium-red">Artium Trio</span>
           </h2>
           <p class="text-xl text-artium-carbon/75 max-w-3xl mx-auto leading-relaxed" data-i18n="about.subtitle">
-            Som tres músics apassionats que hem unit els nostres talents per crear
-            experiències musicals úniques en casaments i esdeveniments especials.
+            Som el Bernat, l'Antoni i el Guillem. Traduïm la vostra història al violí, al violoncel i al piano.
           </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
           <!-- Violinist -->
           <div class="text-center group">
-            <div class="relative overflow-hidden rounded-lg mb-6 hover:scale-105 transition-transform duration-300">
-              <img
-                src="assets/images/violinista.png"
-                alt="Violinista d'Artium Trio tocant en un casament"
-                class="w-full h-80 object-cover"
-                loading="lazy"
-              >
+            <div class="relative overflow-hidden rounded-lg mb-6 aspect-[4/5]">
+              <picture>
+                <source type="image/webp" srcset="assets/images/violinista.webp">
+                <img
+                  src="assets/images/violinista.jpg"
+                  alt="Violinista d'Artium Trio tocant en un casament"
+                  width="1000"
+                  height="1250"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
               <div class="absolute inset-0 bg-gradient-to-t from-artium-carbon/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <h3 class="text-2xl font-serif font-semibold text-artium-carbon mb-2" data-i18n="about.violinTitle">Violí</h3>
@@ -375,13 +389,19 @@
 
           <!-- Keyboardist -->
           <div class="text-center group">
-            <div class="relative overflow-hidden rounded-lg mb-6 hover:scale-105 transition-transform duration-300">
-              <img
-                src="assets/images/pianista.png"
-                alt="Pianista d'Artium Trio durant una cerimònia de casament"
-                class="w-full h-80 object-cover"
-                loading="lazy"
-              >
+            <div class="relative overflow-hidden rounded-lg mb-6 aspect-[4/5]">
+              <picture>
+                <source type="image/webp" srcset="assets/images/pianista.webp">
+                <img
+                  src="assets/images/pianista.jpg"
+                  alt="Pianista d'Artium Trio durant una cerimònia de casament"
+                  width="1000"
+                  height="1250"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
               <div class="absolute inset-0 bg-gradient-to-t from-artium-carbon/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <h3 class="text-2xl font-serif font-semibold text-artium-carbon mb-2" data-i18n="about.pianoTitle">Piano</h3>
@@ -392,13 +412,19 @@
 
           <!-- Cellist -->
           <div class="text-center group">
-            <div class="relative overflow-hidden rounded-lg mb-6 hover:scale-105 transition-transform duration-300">
-              <img
-                src="assets/images/violoncelista.png"
-                alt="Violoncel·lista d'Artium Trio en concert en un casament"
-                class="w-full h-80 object-cover"
-                loading="lazy"
-              >
+            <div class="relative overflow-hidden rounded-lg mb-6 aspect-[4/5]">
+              <picture>
+                <source type="image/webp" srcset="assets/images/violoncelista.webp">
+                <img
+                  src="assets/images/violoncelista.jpg"
+                  alt="Violoncel·lista d'Artium Trio en concert en un casament"
+                  width="1000"
+                  height="1250"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
               <div class="absolute inset-0 bg-gradient-to-t from-artium-carbon/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <h3 class="text-2xl font-serif font-semibold text-artium-carbon mb-2" data-i18n="about.celloTitle">Violoncel</h3>
@@ -411,12 +437,18 @@
         <!-- Group photo and description -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="relative">
-            <img
-              src="assets/images/artium-trio-grup.png"
-              alt="Artium Trio - El trio complet de violí, violoncel i piano tocant junts en un casament"
-              class="w-full rounded-lg shadow-xl"
-              loading="lazy"
-            >
+            <picture>
+              <source type="image/webp" srcset="assets/images/artium-trio-grup-photo.webp">
+              <img
+                src="assets/images/artium-trio-grup-photo.jpg"
+                alt="Artium Trio - El trio complet de violí, violoncel i piano tocant junts en un casament"
+                width="1000"
+                height="1333"
+                class="w-full rounded-lg shadow-xl"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
           </div>
           <div class="space-y-6">
             <h3 class="text-3xl font-serif font-semibold tracking-tight text-artium-carbon" data-i18n="about.storyTitle">
