@@ -10,6 +10,9 @@
     gtag('config', 'G-W083QPRCHX');
   </script>
 
+  <!-- Tally widget (popup forms + JS events) -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
+
   <!-- Essential Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -335,7 +338,7 @@
             <a href="#escolta-nos" data-i18n="hero.ctaPrimary" class="bg-artium-red hover:bg-artium-red/90 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 shadow-2xl rounded-lg">
               Escolta'ns
             </a>
-            <a href="https://tally.so/r/mOPW2p" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaSecondary" class="border-2 border-white/80 text-white hover:bg-white hover:text-artium-carbon px-8 py-4 text-lg font-medium transition-all duration-300 bg-transparent shadow-2xl hover:scale-105 rounded-lg">
+            <a href="https://tally.so/r/mOPW2p" target="_blank" rel="noopener noreferrer" data-tally-cta="hero" data-i18n="hero.ctaSecondary" class="border-2 border-white/80 text-white hover:bg-white hover:text-artium-carbon px-8 py-4 text-lg font-medium transition-all duration-300 bg-transparent shadow-2xl hover:scale-105 rounded-lg">
               Consulta la vostra data
             </a>
           </div>
@@ -908,7 +911,7 @@
                 </svg>
                 <span data-i18n="videos.ctaYoutube">Veure més a YouTube</span>
               </a>
-              <a href="https://tally.so/r/mOPW2p" target="_blank" rel="noopener noreferrer" class="border-2 border-artium-red text-artium-red hover:bg-artium-red hover:text-white px-8 py-3 rounded-lg transition-colors duration-200" data-i18n="videos.ctaTalk">
+              <a href="https://tally.so/r/mOPW2p" target="_blank" rel="noopener noreferrer" data-tally-cta="videos" class="border-2 border-artium-red text-artium-red hover:bg-artium-red hover:text-white px-8 py-3 rounded-lg transition-colors duration-200" data-i18n="videos.ctaTalk">
                 Escriu-nos sense compromís
               </a>
             </div>
@@ -1125,6 +1128,7 @@
               href="https://tally.so/r/mOPW2p"
               target="_blank"
               rel="noopener noreferrer"
+              data-tally-cta="contact"
               class="w-full bg-artium-red hover:bg-artium-red/90 text-white py-4 text-lg font-medium rounded-lg flex items-center justify-center gap-2 transition-colors duration-200"
             >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1277,9 +1281,54 @@
       applyTranslations(stored);
 
       document.querySelectorAll('[data-lang]').forEach(btn => {
-        btn.addEventListener('click', () => applyTranslations(btn.getAttribute('data-lang')));
+        btn.addEventListener('click', () => {
+          const lang = btn.getAttribute('data-lang');
+          gtag('event', 'language_change', { language: lang });
+          applyTranslations(lang);
+        });
       });
     })();
+
+    // ---------- Tally popup (lead form) ----------
+    var TALLY_FORM_ID = 'mOPW2p';
+    function openTallyPopup(ctaLocation) {
+      gtag('event', 'cta_click', { cta_location: ctaLocation, cta_type: 'tally_form' });
+      if (typeof Tally !== 'undefined' && Tally.openPopup) {
+        Tally.openPopup(TALLY_FORM_ID, {
+          layout: 'modal',
+          hideTitle: true,
+          autoClose: 3000,
+          onSubmit: function () {
+            gtag('event', 'generate_lead', { cta_location: ctaLocation });
+          }
+        });
+      } else {
+        // Fallback if the Tally widget hasn't loaded yet
+        window.open('https://tally.so/r/' + TALLY_FORM_ID, '_blank', 'noopener,noreferrer');
+      }
+    }
+    document.querySelectorAll('[data-tally-cta]').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        openTallyPopup(el.getAttribute('data-tally-cta'));
+      });
+    });
+
+    // ---------- Engagement tracking (phone / email / social / video) ----------
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href]');
+      if (!a) return;
+      var href = a.getAttribute('href');
+      if (href.indexOf('tel:') === 0) {
+        gtag('event', 'phone_click', { link_url: href });
+      } else if (href.indexOf('mailto:') === 0) {
+        gtag('event', 'email_click', { link_url: href });
+      } else if (href.indexOf('instagram.com') !== -1) {
+        gtag('event', 'social_click', { social_network: 'instagram' });
+      } else if (href.indexOf('youtube.com') !== -1) {
+        gtag('event', 'social_click', { social_network: 'youtube' });
+      }
+    });
 
     // ---------- Smooth scroll ----------
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1309,6 +1358,7 @@
     document.querySelectorAll('.video-facade').forEach(function(facade) {
       function activate() {
         var id = facade.dataset.videoId;
+        gtag('event', 'video_play', { video_id: id });
         var wrapper = facade.querySelector('div');
         var iframe = document.createElement('iframe');
         iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&playsinline=1';
