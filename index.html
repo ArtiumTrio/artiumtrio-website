@@ -548,15 +548,19 @@
             i us l'adaptem a mida. Escriviu-nos per parlar del vostre projecte i us enviem el dossier
             complet amb totes les propostes.
           </p>
+          <div class="flex flex-col items-center gap-3 mb-8">
+            <span class="w-10 h-px bg-artium-gold"></span>
+            <p class="font-serif text-lg md:text-xl text-artium-carbon" data-i18n="packages.priceFrom">Propostes a partir de 980 €</p>
+          </div>
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#testimonis" class="bg-artium-red hover:bg-artium-red/90 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 inline-flex items-center gap-2">
+            <a href="https://tally.so/r/mOPW2p" target="_blank" rel="noopener noreferrer" data-tally-cta="packages" class="bg-artium-red hover:bg-artium-red/90 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200" data-i18n="packages.ctaTalk">
+              Consulteu disponibilitat per a la vostra data
+            </a>
+            <a href="#testimonis" class="border-2 border-artium-red text-artium-red hover:bg-artium-red hover:text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 inline-flex items-center gap-2">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
               </svg>
-              <span data-i18n="packages.ctaTestimonials">Llegeix els testimonis</span>
-            </a>
-            <a href="#contacte" class="border-2 border-artium-red text-artium-red hover:bg-artium-red hover:text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200" data-i18n="packages.ctaTalk">
-              Parlem del vostre dia
+              <span data-i18n="packages.ctaTestimonials">Què diuen les parelles</span>
             </a>
           </div>
         </div>
@@ -1253,22 +1257,28 @@
       });
     })();
 
-    // ---------- Tally popup (lead form) ----------
-    var TALLY_FORM_ID = 'mOPW2p';
+    // ---------- Tally popup (lead form, one per language) ----------
+    var TALLY_FORM_IDS = { ca: 'mOPW2p', es: 'objJKX', en: 'Pdqobd' };
+    function currentFormLang() {
+      var lang = document.documentElement.lang;
+      return TALLY_FORM_IDS[lang] ? lang : I18N_DEFAULT;
+    }
     function openTallyPopup(ctaLocation) {
-      gtag('event', 'cta_click', { cta_location: ctaLocation, cta_type: 'tally_form' });
+      var formLang = currentFormLang();
+      var formId = TALLY_FORM_IDS[formLang];
+      gtag('event', 'cta_click', { cta_location: ctaLocation, cta_type: 'tally_form', form_language: formLang });
       if (typeof Tally !== 'undefined' && Tally.openPopup) {
-        Tally.openPopup(TALLY_FORM_ID, {
+        Tally.openPopup(formId, {
           layout: 'modal',
-          hideTitle: true,
+          hideTitle: false,
           autoClose: 3000,
           onSubmit: function () {
-            gtag('event', 'generate_lead', { cta_location: ctaLocation });
+            gtag('event', 'generate_lead', { cta_location: ctaLocation, form_language: formLang });
           }
         });
       } else {
         // Fallback if the Tally widget hasn't loaded yet
-        window.open('https://tally.so/r/' + TALLY_FORM_ID, '_blank', 'noopener,noreferrer');
+        window.open('https://tally.so/r/' + formId, '_blank', 'noopener,noreferrer');
       }
     }
     document.querySelectorAll('[data-tally-cta]').forEach(function (el) {

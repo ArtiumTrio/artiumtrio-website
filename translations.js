@@ -59,8 +59,9 @@ const translations = {
       aperitifDesc: "90 minuts de música durant l'aperitiu, amb un repertori que s'adapta a l'ambient de la celebració — més íntim al principi, més festiu a mesura que avança la trobada.",
       combineTitle: "Combineu els moments que necessiteu",
       combineBody: "Cada casament és únic. Us ajudem a triar la combinació que millor s'adapta al vostre dia, i us l'adaptem a mida. Escriviu-nos per parlar del vostre projecte i us enviem el dossier complet amb totes les propostes.",
-      ctaTestimonials: "Llegeix els testimonis",
-      ctaTalk: "Parlem del vostre dia"
+      priceFrom: "Propostes a partir de 980 €",
+      ctaTestimonials: "Què diuen les parelles",
+      ctaTalk: "Consulteu disponibilitat per a la vostra data"
     },
     testimonials: {
       title: 'El que diuen <span class="text-artium-red">les nostres parelles</span>',
@@ -196,8 +197,9 @@ const translations = {
       aperitifDesc: "90 minutes of music during the aperitif, with a repertoire that adapts to the atmosphere of the celebration — more intimate at first, more festive as the gathering unfolds.",
       combineTitle: "Combine the moments you need",
       combineBody: "Every wedding is unique. We help you choose the combination that best fits your day, and we tailor it to you. Get in touch to talk about your project and we'll send you the full dossier with all the proposals.",
-      ctaTestimonials: "Read the testimonials",
-      ctaTalk: "Let's talk about your day"
+      priceFrom: "Proposals from €980",
+      ctaTestimonials: "What couples say",
+      ctaTalk: "Check availability for your date"
     },
     testimonials: {
       title: 'What <span class="text-artium-red">our couples</span> say',
@@ -333,8 +335,9 @@ const translations = {
       aperitifDesc: "90 minutos de música durante el aperitivo, con un repertorio que se adapta al ambiente de la celebración — más íntimo al principio, más festivo a medida que avanza el encuentro.",
       combineTitle: "Combinad los momentos que necesitéis",
       combineBody: "Cada boda es única. Os ayudamos a elegir la combinación que mejor se adapta a vuestro día, y os la adaptamos a medida. Escribidnos para hablar de vuestro proyecto y os enviamos el dossier completo con todas las propuestas.",
-      ctaTestimonials: "Lee los testimonios",
-      ctaTalk: "Hablemos de vuestro día"
+      priceFrom: "Propuestas desde 980 €",
+      ctaTestimonials: "Qué dicen las parejas",
+      ctaTalk: "Consultad disponibilidad para vuestra fecha"
     },
     testimonials: {
       title: 'Lo que dicen <span class="text-artium-red">nuestras parejas</span>',
