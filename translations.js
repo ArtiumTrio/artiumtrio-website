@@ -142,6 +142,12 @@ const translations = {
       location: "Catalunya",
       copyright: "Artium Trio. Tots els drets reservats.",
       bottomTagline: "Fem realitat la música dels vostres somnis"
+    },
+    consent: {
+      text: "Fem servir galetes d'analítica (Google) i de publicitat (Meta) per entendre com es fa servir la web i mesurar els nostres anuncis. Només s'activen si les accepteu.",
+      accept: "Acceptar",
+      reject: "Rebutjar",
+      settings: "Configuració de galetes"
     }
   },
 
@@ -280,6 +286,12 @@ const translations = {
       location: "Catalonia",
       copyright: "Artium Trio. All rights reserved.",
       bottomTagline: "Making the music of your dreams come true"
+    },
+    consent: {
+      text: "We use analytics (Google) and advertising (Meta) cookies to understand how the site is used and to measure our ads. They're only switched on if you accept.",
+      accept: "Accept",
+      reject: "Reject",
+      settings: "Cookie settings"
     }
   },
 
@@ -418,6 +430,12 @@ const translations = {
       location: "Cataluña",
       copyright: "Artium Trio. Todos los derechos reservados.",
       bottomTagline: "Hacemos realidad la música de vuestros sueños"
+    },
+    consent: {
+      text: "Usamos cookies de analítica (Google) y de publicidad (Meta) para entender cómo se usa la web y medir nuestros anuncios. Solo se activan si las aceptáis.",
+      accept: "Aceptar",
+      reject: "Rechazar",
+      settings: "Configuración de cookies"
     }
   }
 };
