@@ -28,7 +28,7 @@ const translations = {
       title: "Posem la banda sonora al dia que recordareu per sempre",
       subtitle: "Trio de violí, violoncel i piano per a esdeveniments",
       ctaPrimary: "Escolta'ns",
-      ctaSecondary: "Consulta la vostra data",
+      ctaSecondary: "Comprova la vostra data",
       proof: "5,0 · +100 casaments · 12 anys tocant junts"
     },
     about: {
@@ -61,12 +61,13 @@ const translations = {
       combineBody: "Cada casament és únic. Us ajudem a triar la combinació que millor s'adapta al vostre dia, i us l'adaptem a mida. Escriviu-nos per parlar del vostre projecte i us enviem el dossier complet amb totes les propostes.",
       priceFrom: "Propostes a partir de 980 €",
       ctaTestimonials: "Què diuen les parelles",
-      ctaTalk: "Consulteu disponibilitat per a la vostra data"
+      ctaTalk: "Comprova disponibilitat"
     },
     testimonials: {
       title: 'El que diuen <span class="text-artium-red">les nostres parelles</span>',
       subtitle: "Cada casament és únic i especial. Aquestes són les paraules d'algunes de les parelles que han confiat en nosaltres per fer del seu dia alguna cosa inoblidable.",
       badge: "5,0 de mitjana a bodas.net",
+      more: "Veure més opinions",
       t1Quote: "Artium Trio va fer que el nostre casament fos absolutament màgic. La música durant la cerimònia ens va emocionar fins a les llàgrimes, i durant el còctel van crear l'ambient perfecte. Tots els nostres convidats van quedar encantats!",
       t1Name: "Maria i Carles",
       t1Venue: "Jardí Botànic Marimurtra · Juny 2025",
@@ -99,7 +100,7 @@ const translations = {
       ctaTitle: "T'agrada el que veus?",
       ctaBody: "Aquests són només alguns exemples del nostre treball. Cada casament és únic i adaptem el nostre estil a les vostres preferències musicals per crear la banda sonora perfecta del vostre dia especial.",
       ctaYoutube: "Veure més a YouTube",
-      ctaTalk: "Escriu-nos sense compromís"
+      ctaTalk: "Demaneu el dossier"
     },
     faq: {
       title: 'Preguntes <span class="text-artium-red">freqüents</span>',
@@ -133,7 +134,7 @@ const translations = {
       include4: "Flexibilitat en horaris i ubicació",
       formHeading: "Parlem del vostre dia?",
       formBody: "Feu clic al botó de sota per enviar-nos els detalls del vostre casament. Us respondrem el més aviat possible i us enviarem el dossier complet amb totes les propostes.",
-      formCta: "Escriu-nos sense compromís",
+      formCta: "Demaneu el dossier",
       formPhoneNote: "O truqueu-nos directament al"
     },
     footer: {
@@ -142,6 +143,9 @@ const translations = {
       location: "Catalunya",
       copyright: "Artium Trio. Tots els drets reservats.",
       bottomTagline: "Fem realitat la música dels vostres somnis"
+    },
+    sticky: {
+      cta: "Comprova si tenim la vostra data"
     },
     consent: {
       text: "Fem servir galetes d'analítica (Google) i de publicitat (Meta) per entendre com es fa servir la web i mesurar els nostres anuncis. Només s'activen si les accepteu.",
@@ -205,12 +209,13 @@ const translations = {
       combineBody: "Every wedding is unique. We help you choose the combination that best fits your day, and we tailor it to you. Get in touch to talk about your project and we'll send you the full dossier with all the proposals.",
       priceFrom: "Proposals from €980",
       ctaTestimonials: "What couples say",
-      ctaTalk: "Check availability for your date"
+      ctaTalk: "Check availability"
     },
     testimonials: {
       title: 'What <span class="text-artium-red">our couples</span> say',
       subtitle: "Every wedding is unique and special. These are the words of some of the couples who have trusted us to make their day unforgettable.",
       badge: "5.0 average on bodas.net",
+      more: "See more reviews",
       t1Quote: "Artium Trio made our wedding absolutely magical. The music during the ceremony moved us to tears, and during the cocktail hour they created the perfect atmosphere. All of our guests were delighted!",
       t1Name: "Maria & Carles",
       t1Venue: "Jardí Botànic Marimurtra · June 2025",
@@ -243,7 +248,7 @@ const translations = {
       ctaTitle: "Do you like what you see?",
       ctaBody: "These are just a few examples of our work. Every wedding is unique and we adapt our style to your musical preferences to create the perfect soundtrack for your special day.",
       ctaYoutube: "See more on YouTube",
-      ctaTalk: "Get in touch, no strings attached"
+      ctaTalk: "Request our dossier"
     },
     faq: {
       title: 'Frequently asked <span class="text-artium-red">questions</span>',
@@ -277,7 +282,7 @@ const translations = {
       include4: "Flexible schedule and location",
       formHeading: "Let's talk about your day?",
       formBody: "Click the button below to send us the details of your wedding. We'll get back to you as soon as possible and send you the full dossier with all the proposals.",
-      formCta: "Get in touch, no strings attached",
+      formCta: "Request our dossier",
       formPhoneNote: "Or call us directly at"
     },
     footer: {
@@ -286,6 +291,9 @@ const translations = {
       location: "Catalonia",
       copyright: "Artium Trio. All rights reserved.",
       bottomTagline: "Making the music of your dreams come true"
+    },
+    sticky: {
+      cta: "Check if we're free on your date"
     },
     consent: {
       text: "We use analytics (Google) and advertising (Meta) cookies to understand how the site is used and to measure our ads. They're only switched on if you accept.",
@@ -316,7 +324,7 @@ const translations = {
       title: "Ponemos la banda sonora al día que recordaréis para siempre",
       subtitle: "Trío de violín, violonchelo y piano para eventos",
       ctaPrimary: "Escúchanos",
-      ctaSecondary: "Consulta vuestra fecha",
+      ctaSecondary: "Comprueba vuestra fecha",
       proof: "5,0 · +100 bodas · 12 años tocando juntos"
     },
     about: {
@@ -349,12 +357,13 @@ const translations = {
       combineBody: "Cada boda es única. Os ayudamos a elegir la combinación que mejor se adapta a vuestro día, y os la adaptamos a medida. Escribidnos para hablar de vuestro proyecto y os enviamos el dossier completo con todas las propuestas.",
       priceFrom: "Propuestas desde 980 €",
       ctaTestimonials: "Qué dicen las parejas",
-      ctaTalk: "Consultad disponibilidad para vuestra fecha"
+      ctaTalk: "Comprobar disponibilidad"
     },
     testimonials: {
       title: 'Lo que dicen <span class="text-artium-red">nuestras parejas</span>',
       subtitle: "Cada boda es única y especial. Estas son las palabras de algunas de las parejas que han confiado en nosotros para hacer de su día algo inolvidable.",
       badge: "5,0 de media en bodas.net",
+      more: "Ver más opiniones",
       t1Quote: "Artium Trio hizo que nuestra boda fuera absolutamente mágica. La música durante la ceremonia nos emocionó hasta las lágrimas, y durante el cóctel crearon el ambiente perfecto. ¡Todos nuestros invitados quedaron encantados!",
       t1Name: "Maria y Carles",
       t1Venue: "Jardí Botànic Marimurtra · Junio 2025",
@@ -387,7 +396,7 @@ const translations = {
       ctaTitle: "¿Te gusta lo que ves?",
       ctaBody: "Estos son solo algunos ejemplos de nuestro trabajo. Cada boda es única y adaptamos nuestro estilo a vuestras preferencias musicales para crear la banda sonora perfecta de vuestro día especial.",
       ctaYoutube: "Ver más en YouTube",
-      ctaTalk: "Escríbenos sin compromiso"
+      ctaTalk: "Pedid el dossier"
     },
     faq: {
       title: 'Preguntas <span class="text-artium-red">frecuentes</span>',
@@ -421,7 +430,7 @@ const translations = {
       include4: "Flexibilidad en horarios y ubicación",
       formHeading: "¿Hablamos de vuestro día?",
       formBody: "Haced clic en el botón de abajo para enviarnos los detalles de vuestra boda. Os responderemos lo antes posible y os enviaremos el dossier completo con todas las propuestas.",
-      formCta: "Escríbenos sin compromiso",
+      formCta: "Pedid el dossier",
       formPhoneNote: "O llamadnos directamente al"
     },
     footer: {
@@ -430,6 +439,9 @@ const translations = {
       location: "Cataluña",
       copyright: "Artium Trio. Todos los derechos reservados.",
       bottomTagline: "Hacemos realidad la música de vuestros sueños"
+    },
+    sticky: {
+      cta: "Comprueba si estamos libres en vuestra fecha"
     },
     consent: {
       text: "Usamos cookies de analítica (Google) y de publicidad (Meta) para entender cómo se usa la web y medir nuestros anuncios. Solo se activan si las aceptáis.",

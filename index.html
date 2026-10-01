@@ -341,11 +341,11 @@
           </p>
 
           <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#escolta-nos" data-i18n="hero.ctaPrimary" class="bg-artium-red hover:bg-artium-red/90 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 shadow-2xl rounded-lg">
+          <div class="flex flex-col-reverse sm:flex-row gap-4 justify-center items-center">
+            <a href="#escolta-nos" data-i18n="hero.ctaPrimary" class="border-2 border-white/80 text-white hover:bg-white hover:text-artium-carbon px-8 py-4 text-lg font-medium transition-all duration-300 bg-transparent shadow-2xl hover:scale-105 rounded-lg">
               Escolta'ns
             </a>
-            <a href="https://tally.so/r/mOPW2p" target="_blank" rel="noopener noreferrer" data-tally-cta="hero" data-i18n="hero.ctaSecondary" class="border-2 border-white/80 text-white hover:bg-white hover:text-artium-carbon px-8 py-4 text-lg font-medium transition-all duration-300 bg-transparent shadow-2xl hover:scale-105 rounded-lg">
+            <a href="https://tally.so/r/mOPW2p" target="_blank" rel="noopener noreferrer" data-tally-cta="hero" data-i18n="hero.ctaSecondary" class="bg-artium-red hover:bg-artium-red/90 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 shadow-2xl rounded-lg">
               Consulta la vostra data
             </a>
           </div>
@@ -362,9 +362,9 @@
     </section>
 
     <!-- About Section -->
-    <section id="sobre-nosaltres" class="py-20 bg-artium-cream">
+    <section id="sobre-nosaltres" class="py-12 md:py-20 bg-artium-cream">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
+        <div class="text-center mb-8 md:mb-16">
           <h2 class="text-4xl md:text-5xl font-serif font-semibold tracking-tight text-artium-carbon mb-6" data-i18n-html="about.title">
             Coneix <span class="text-artium-red">Artium Trio</span>
           </h2>
@@ -373,7 +373,7 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+        <div class="hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
           <!-- Violinist -->
           <div class="text-center group">
             <div class="relative overflow-hidden rounded-lg mb-6 aspect-[4/5]">
@@ -446,7 +446,7 @@
 
         <!-- Group photo and description -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="relative">
+          <div class="relative hidden lg:block">
             <picture>
               <source type="image/webp" srcset="assets/images/artium-trio-grup-photo.webp">
               <img
@@ -499,7 +499,7 @@
     </section>
 
     <!-- Packages / Propostes Section -->
-    <section id="propostes" class="py-20 bg-artium-cream-light">
+    <section id="propostes" class="py-12 md:py-20 bg-artium-cream-light">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-serif font-semibold tracking-tight text-artium-carbon mb-6" data-i18n-html="packages.title">
@@ -588,7 +588,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonis" class="py-20 bg-artium-cream-light">
+    <section id="testimonis" class="py-12 md:py-20 bg-artium-cream-light">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-serif font-semibold tracking-tight text-artium-carbon mb-6" data-i18n-html="testimonials.title">
@@ -656,7 +656,7 @@
           </div>
 
           <!-- Testimonial 4 -->
-          <div class="bg-artium-cream rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 relative">
+          <div data-testimonial-extra class="hidden md:block bg-artium-cream rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 relative">
             <div class="absolute top-4 right-4 text-artium-red/30 text-5xl font-serif">"</div>
             <div class="flex items-center mb-3">
               <span class="text-artium-gold text-lg">★★★★★</span>
@@ -674,7 +674,7 @@
           </div>
 
           <!-- Testimonial 5 -->
-          <div class="bg-artium-cream rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 relative">
+          <div data-testimonial-extra class="hidden md:block bg-artium-cream rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 relative">
             <div class="absolute top-4 right-4 text-artium-red/30 text-5xl font-serif">"</div>
             <div class="flex items-center mb-3">
               <span class="text-artium-gold text-lg">★★★★★</span>
@@ -692,7 +692,7 @@
           </div>
 
           <!-- Testimonial 6 -->
-          <div class="bg-artium-cream rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 relative">
+          <div data-testimonial-extra class="hidden md:block bg-artium-cream rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 relative">
             <div class="absolute top-4 right-4 text-artium-red/30 text-5xl font-serif">"</div>
             <div class="flex items-center mb-3">
               <span class="text-artium-gold text-lg">★★★★★</span>
@@ -708,6 +708,11 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- Mobile only: reveal the remaining testimonials -->
+        <div class="text-center mt-8 md:hidden">
+          <button type="button" id="testimonials-more" class="border-2 border-artium-red text-artium-red hover:bg-artium-red hover:text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200" data-i18n="testimonials.more">Veure més opinions</button>
         </div>
 
         <!-- bodas.net badge -->
@@ -746,7 +751,7 @@
     </section>
 
     <!-- Videos Section -->
-    <section id="escolta-nos" class="py-20 bg-artium-cream text-artium-carbon">
+    <section id="escolta-nos" class="py-12 md:py-20 bg-artium-cream text-artium-carbon">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-serif font-semibold tracking-tight mb-6" data-i18n-html="videos.title">
@@ -766,7 +771,7 @@
 
         <div class="grid gap-6 mb-12" style="grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));">
           <!-- Video 1: Sex Bomb -->
-          <div class="video-facade group relative bg-artium-taupe/30 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
+          <div class="video-facade order-2 sm:order-none group relative bg-artium-taupe/30 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
                data-video-id="HLwUuNRmAQY"
                role="button"
                tabindex="0"
@@ -789,7 +794,7 @@
           </div>
 
           <!-- Video 2: Hallelujah -->
-          <div class="video-facade group relative bg-artium-taupe/30 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
+          <div class="video-facade order-3 sm:order-none group relative bg-artium-taupe/30 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
                data-video-id="j18_4q-aUfw"
                role="button"
                tabindex="0"
@@ -812,7 +817,7 @@
           </div>
 
           <!-- Video 2: Sort de tu -->
-          <div class="video-facade group relative bg-artium-taupe/30 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
+          <div class="video-facade order-1 sm:order-none group relative bg-artium-taupe/30 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
                data-video-id="Lz9teg-GqR0"
                role="button"
                tabindex="0"
@@ -835,7 +840,7 @@
           </div>
 
           <!-- Video 3: Your Song -->
-          <div class="video-facade group relative bg-artium-taupe/30 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
+          <div class="video-facade hidden sm:block order-4 sm:order-none group relative bg-artium-taupe/30 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
                data-video-id="TyT3nTYfK64"
                role="button"
                tabindex="0"
@@ -858,7 +863,7 @@
           </div>
 
           <!-- Video 5: Cheap Thrills -->
-          <div class="video-facade group relative bg-artium-taupe/30 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
+          <div class="video-facade hidden sm:block order-5 sm:order-none group relative bg-artium-taupe/30 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
                data-video-id="67_xz0HvgeM"
                role="button"
                tabindex="0"
@@ -909,7 +914,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="py-20 bg-artium-cream">
+    <section id="faq" class="py-12 md:py-20 bg-artium-cream">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-serif font-semibold tracking-tight text-artium-carbon mb-6" data-i18n-html="faq.title">
@@ -1000,7 +1005,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contacte" class="py-20 bg-artium-cream-light">
+    <section id="contacte" class="py-12 md:py-20 bg-artium-cream-light">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-4xl md:text-5xl font-serif font-semibold tracking-tight text-artium-carbon mb-6" data-i18n-html="contact.title">
@@ -1135,7 +1140,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-artium-carbon text-artium-cream py-12">
+  <footer class="bg-artium-carbon text-artium-cream py-12 pb-28 md:pb-12">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Logo and description -->
@@ -1212,6 +1217,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- Sticky CTA (mobile only): appears once the hero has scrolled away -->
+  <div id="sticky-cta" class="md:hidden fixed inset-x-0 bottom-0 z-40 px-4 pb-4 pt-3 bg-gradient-to-t from-artium-cream via-artium-cream/95 to-transparent translate-y-full opacity-0 pointer-events-none transition-all duration-300" aria-hidden="true">
+    <a href="https://tally.so/r/mOPW2p" target="_blank" rel="noopener noreferrer" data-tally-cta="sticky" tabindex="-1" class="block w-full text-center bg-artium-red hover:bg-artium-red/90 text-white py-3.5 text-base font-medium rounded-lg shadow-lg" data-i18n="sticky.cta">Comprova si tenim la vostra data</a>
+  </div>
 
   <!-- Cookie consent banner -->
   <div id="cookie-banner" class="hidden fixed inset-x-0 bottom-0 z-50 p-4" role="dialog" aria-live="polite" aria-labelledby="cookie-banner-text">
@@ -1373,6 +1383,22 @@
       var lang = document.documentElement.lang;
       return TALLY_FORM_IDS[lang] ? lang : I18N_DEFAULT;
     }
+    // Campaign attribution: carried into the Tally submission as hidden fields
+    // (only stored if the form defines hidden fields with these exact names)
+    var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+    var utmParams = (function () {
+      var found = {};
+      try {
+        var q = new URLSearchParams(location.search);
+        UTM_KEYS.forEach(function (k) { if (q.get(k)) found[k] = q.get(k); });
+        if (Object.keys(found).length) {
+          sessionStorage.setItem('artium-utm', JSON.stringify(found));
+        } else {
+          found = JSON.parse(sessionStorage.getItem('artium-utm') || '{}');
+        }
+      } catch (e) {}
+      return found;
+    })();
     function openTallyPopup(ctaLocation) {
       var formLang = currentFormLang();
       var formId = TALLY_FORM_IDS[formLang];
@@ -1382,6 +1408,7 @@
         Tally.openPopup(formId, {
           layout: 'modal',
           hideTitle: false,
+          hiddenFields: Object.assign({ cta_location: ctaLocation, form_language: formLang }, utmParams),
           autoClose: 3000,
           onSubmit: function (payload) {
             gtag('event', 'generate_lead', { cta_location: ctaLocation, form_language: formLang });
@@ -1406,6 +1433,42 @@
         openTallyPopup(el.getAttribute('data-tally-cta'));
       });
     });
+
+    // ---------- Sticky CTA (mobile): visible after the hero, hidden while the cookie banner is open ----------
+    (function initStickyCta() {
+      var bar = document.getElementById('sticky-cta');
+      var hero = document.getElementById('inici');
+      var banner = document.getElementById('cookie-banner');
+      if (!bar || !hero || !('IntersectionObserver' in window)) return;
+      var heroGone = false;
+      var link = bar.querySelector('a');
+      function update() {
+        var show = heroGone && banner.classList.contains('hidden');
+        bar.classList.toggle('translate-y-full', !show);
+        bar.classList.toggle('opacity-0', !show);
+        bar.classList.toggle('pointer-events-none', !show);
+        bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+        link.tabIndex = show ? 0 : -1;
+      }
+      new IntersectionObserver(function (entries) {
+        heroGone = !entries[0].isIntersecting;
+        update();
+      }).observe(hero);
+      new MutationObserver(update).observe(banner, { attributes: true, attributeFilter: ['class'] });
+    })();
+
+    // ---------- Testimonials: "see more" on mobile ----------
+    (function initTestimonialsMore() {
+      var btn = document.getElementById('testimonials-more');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('[data-testimonial-extra]').forEach(function (el) {
+          el.classList.remove('hidden');
+        });
+        btn.parentElement.classList.add('hidden');
+        gtag('event', 'testimonials_expand');
+      });
+    })();
 
     // ---------- Engagement tracking (phone / email / social / video) ----------
     document.addEventListener('click', function (e) {
